@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KOSMOS — Visual Archive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">K<span>·</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#timeline" class="nav-link">Timeline</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#gallery" class="btn-nav">Enter Archive</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">OPEN VISUAL ARCHIVE</div>
+      <h1 class="hero-title reveal-up">KOSMOS</h1>
+      <p class="hero-desc reveal-up">
+        KOSMOS is an open visual archive — a limitless space where anyone can publish and preserve moments through imagery. No accounts. No barriers. Just photographs, memories, and stories suspended in a digital cosmos.
+      </p>
+      <div class="hero-buttons reveal-up">
+        <a href="#gallery" class="btn-glass btn-primary">
+          <span class="btn-icon">◎</span> Explore Gallery
+        </a>
+        <a href="#" class="btn-glass btn-secondary">
+          <span class="btn-icon">✦</span> Publish Memory
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">PHILOSOPHY</div>
+      <h2 class="section-title reveal-up">About <em>KOSMOS</em></h2>
+      <p class="about-text reveal-up">
+        KOSMOS was imagined as a decentralized visual sanctuary — a place where images exist freely beyond ownership and algorithms. Inspired by humanity's instinct to document existence, the platform acts as a living archive of perspectives captured across time.
+      </p>
+      <div class="cards-grid">
+        <div class="card reveal-card">
+          <div class="card-icon">◈</div>
+          <h3>Open Publishing</h3>
+          <p>Anyone can contribute. No sign-up required. Your images become part of a collective visual consciousness instantly.</p>
+        </div>
+        <div class="card reveal-card">
+          <div class="card-icon">∞</div>
+          <h3>Unlimited Memories</h3>
+          <p>There is no ceiling. Every moment that matters is welcome — from the mundane to the extraordinary.</p>
+        </div>
+        <div class="card reveal-card">
+          <div class="card-icon">◎</div>
+          <h3>Anonymous Sharing</h3>
+          <p>Identity is optional. Let your images speak without the weight of authorship or social metrics.</p>
+        </div>
+        <div class="card reveal-card">
+          <div class="card-icon">✦</div>
+          <h3>Timeless Digital Archive</h3>
+          <p>Images are preserved with permanence in mind — a cosmic library that outlasts platforms and trends.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="timeline">
+    <div class="container">
+      <div class="section-label reveal-up">HISTORY</div>
+      <h2 class="section-title reveal-up">The Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-timeline">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-year">2022</div>
+            <h3 class="timeline-event">The Idea</h3>
+            <p>A concept emerged to create an unrestricted visual archive for humanity — a digital space free from algorithms and gatekeepers.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-timeline">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-year">2023</div>
+            <h3 class="timeline-event">Prototype Built</h3>
+            <p>The first minimal image-sharing interface was designed, laying the foundation for what KOSMOS would become.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-timeline">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-year">2024</div>
+            <h3 class="timeline-event">Public Expansion</h3>
+            <p>The platform evolved into a public gallery accessible to everyone — a commons for visual culture without borders.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-timeline">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-year">2025</div>
+            <h3 class="timeline-event">The Infinite Archive</h3>
+            <p>KOSMOS became a symbolic digital universe of photographs and memories — an ever-expanding cosmos of human vision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-label reveal-up">COLLECTION</div>
+      <h2 class="section-title reveal-up">Public Memories</h2>
+      <div class="gallery-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="cosmos">Cosmos</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+      </div>
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal-gallery" data-category="cosmos">
+          <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&q=80" alt="Galaxy" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Cosmos</span>
+            <h4>Edge of the Universe</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery tall" data-category="city">
+          <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" alt="City" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">City</span>
+            <h4>Neon City Rain</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mountains" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Nature</span>
+            <h4>Alpine Silence</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="abstract">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Abstract" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Abstract</span>
+            <h4>Chromatic Drift</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery wide" data-category="cosmos">
+          <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80" alt="Space" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Cosmos</span>
+            <h4>Nebula Cartography</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="city">
+          <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&q=80" alt="Architecture" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Architecture</span>
+            <h4>Glass Cathedral</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery tall" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Forest" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Nature</span>
+            <h4>Ancient Canopy</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="abstract">
+          <img src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?w=600&q=80" alt="Abstract" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Abstract</span>
+            <h4>Liquid Prism</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="cosmos">
+          <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=600&q=80" alt="Stars" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Cosmos</span>
+            <h4>Star Nursery</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="city">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="Skyline" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">City</span>
+            <h4>Urban Constellation</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Landscape" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Nature</span>
+            <h4>Aerial Passage</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery wide" data-category="abstract">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="Portrait" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Portrait</span>
+            <h4>Quiet Study</h4>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-gallery wide" data-category="abstract">
+          <img src="sat.jpg" alt="Portrait" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Saturn</span>
+            <h4>Ringed Planet</h4>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-logo">KOSMOS</div>
+      <p class="footer-tagline">A limitless space for visual memory.</p>
+      <div class="footer-line"></div>
+      <p class="footer-copy">© 2025 KOSMOS Archive. All images belong to the cosmos.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <button class="lightbox-close" id="lb-close">✕</button>
+    <button class="lightbox-nav prev" id="lb-prev">‹</button>
+    <button class="lightbox-nav next" id="lb-next">›</button>
+    <div class="lightbox-inner">
+      <img id="lb-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <span id="lb-tag"></span>
+        <h3 id="lb-title"></h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
